@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            color: white;
+        }
+
+        .headline {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            background-color: green;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .carousel-container {
+            position: relative;
+            height: 100vh;
+        }
+
+        .carousel-slide {
+            display: flex;
+            width: 100%; /* 9 images * 100% */
+            animation: carousel 30s infinite;
+        }
+
+        .carousel-image {
+            flex: 1;
+            background-size: cover;
+            opacity: 0.5;
+        }
+
+        @keyframes carousel {
+            0% {
+                transform: translateX(0);
+            }
+            11% {
+                transform: translateX(0);
+            }
+            12.5% {
+                transform: translateX(-100%);
+            }
+            23.5% {
+                transform: translateX(-100%);
+            }
+            25% {
+                transform: translateX(-200%);
+            }
+            36% {
+                transform: translateX(-200%);
+            }
+            37.5% {
+                transform: translateX(-300%);
+            }
+            48.5% {
+                transform: translateX(-300%);
+            }
+            50% {
+                transform: translateX(-400%);
+            }
+            61% {
+                transform: translateX(-400%);
+            }
+            62.5% {
+                transform: translateX(-500%);
+            }
+            73.5% {
+                transform: translateX(-500%);
+            }
+            75% {
+                transform: translateX(-600%);
+            }
+            86% {
+                transform: translateX(-600%);
+            }
+            87.5% {
+                transform: translateX(-700%);
+            }
+            98.5% {
+                transform: translateX(-700%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .headline {
+                font-size: 20px;
+            }
+
+            .whatsapp-button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="headline">QUERO COMPRAR A FARMÁCIA!</h1>
+        <a class="whatsapp-button" href="https://wa.me/SEU_NUMERO" target="_blank">WhatsApp</a>
+    </div>
+</body>
+</html>
